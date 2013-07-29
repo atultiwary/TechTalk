@@ -1,0 +1,143 @@
+7223      
+Delivered-To: atul@animoto.com
+Received: by 10.70.75.71 with SMTP id a7csp31569pdw;
+        Fri, 26 Jul 2013 12:55:26 -0700 (PDT)
+X-Received: by 10.69.14.165 with SMTP id fh5mr25569502pbd.81.1374868526372;
+        Fri, 26 Jul 2013 12:55:26 -0700 (PDT)
+Return-Path: <ed@animoto.com>
+Received: from mail-pd0-f179.google.com (mail-pd0-f179.google.com [209.85.192.179])
+        by mx.google.com with ESMTPS id hx8si5311878pbc.167.2013.07.26.12.55.26
+        for <atul@animoto.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 26 Jul 2013 12:55:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of ed@animoto.com designates 209.85.192.179 as permitted sender) client-ip=209.85.192.179;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of ed@animoto.com designates 209.85.192.179 as permitted sender) smtp.mail=ed@animoto.com
+Received: by mail-pd0-f179.google.com with SMTP id v10so3092049pde.24
+        for <atul@animoto.com>; Fri, 26 Jul 2013 12:55:26 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20120113;
+        h=date:from:to:message-id:subject:x-mailer:mime-version:content-type
+         :x-gm-message-state;
+        bh=CLjFjclvN8pMx059ydPOdxCnoyDyijTeIdwaAxQQTtk=;
+        b=NDOYthaWU8mckbqsEefwRjiMeLF+9XARzs54S9z1uQt3XDEbDQAZOBEHTxh3frgA85
+         KUP4bALSBMKgnIWFFeNyttGLoB0V49tBPWSUDvjzeWBmcLPs09jHVk0YsXxtph42bTRj
+         FBuJ8YOD2DgMFYa68twcGBr/Yo/5QzGKubsFHjFvUi+lnQVyVHPz/HrWnEIPr9jcJNgo
+         igBNWXpxIGZnz4qmKyRb2h5psEJF1RzOFbryfWcWaWJRRqpMLqt5o5seXMbCEenY+c8p
+         T6tgUYXFYao6/0qoTKW4UgIG8GsfzZv6r1lRKc2DMEDeXoZHIND311Gbcg7LQ3qgzQyR
+         myrA==
+X-Received: by 10.66.240.104 with SMTP id vz8mr55485353pac.143.1374868526232;
+        Fri, 26 Jul 2013 12:55:26 -0700 (PDT)
+Return-Path: <ed@animoto.com>
+Received: from [10.20.11.69] ([74.113.164.234])
+        by mx.google.com with ESMTPSA id dg3sm61740399pbc.24.2013.07.26.12.55.23
+        for <atul@animoto.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Fri, 26 Jul 2013 12:55:25 -0700 (PDT)
+Date: Fri, 26 Jul 2013 15:55:21 -0400
+From: Ed Podojil <ed@animoto.com>
+To: Atul Tiwary <atul@animoto.com>
+Message-ID: <718A63055A3A422D8A798A20E11D3F22@animoto.com>
+Subject: presentation text
+X-Mailer: sparrow 1.6.4 (build 1178)
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="51f2d429_188bfb19_5e1b"
+X-Gm-Message-State: ALoCoQmb2GHLllN5+ZDO28l1WWCqEOSlFVTW1zlIJ33zK1sx5G2jMlwsRNzgaiDiWihBU7QmBQlC
+
+--51f2d429_188bfb19_5e1b
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+1. introduction 
+a. talk goal: your development in ruby, javascript, and SQL, and implementation into various projects
+b. introduce what you're going to talk about (each section of the talk)
+2. background
+a. What skills did you have in programming before coming to animoto?
+3. Steps and learnings
+a. What did you do to learn ruby (books you read, websites you used)
+b. same with SQL, javascript
+c. review the differences from what you're used to, and the challenges you came across
+4. Projects that you worked on
+a. analytics dash: rewritten from a scripty-style to an OOP style that is much more performant
+b. SQL queries that you had to work on for people and some of the insights they raised
+c. Statty2 bugs: fixing the widget view so the rollup field doesn't reset. making sure a "commercial" rollup included custom post rolls
+5. ec2 project
+a. integration into statty2: ec2 metrics of both sum(render_length) and the compute per length (CHECK OUT THE NEWEST QUERY ON MASTER/STABLE AS IT HAS SLIGHTLY CHANGED, WE CAN GO OVER WHY IT IS THAT WAY AND YOU CAN TALK ABOUT WHY IT MAKES MORE SENSE)
+b. autolaunch mongo data (maybe good to go over how the query got rewritten a few times and the reasons why it was updated, good example of code iteration and code review)
+6. insights/learnings/wrapup
+a. relatively freeform, show off the ec2 metrics included in statty2, etc, open up for questions
+
+
+let me know if you have any questions, and feel free to play around with the format as you wish--this is your presentation, not mine ;)
+
+Ed 
+
+
+--51f2d429_188bfb19_5e1b
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+
+                <div>
+                    1. introduction
+                </div><div><span class=3D=22Apple-tab-span=22 style=3D=22=
+white-space: pre; =22>	</span>a. talk goal: your development in ruby, jav=
+ascript, and SQL, and implementation into various projects</div><div><spa=
+n class=3D=22Apple-tab-span=22 style=3D=22white-space:pre=22>	</span>b. i=
+ntroduce what you're going to talk about (each section of the talk)</div>=
+<div>2. background</div><div><span class=3D=22Apple-tab-span=22 style=3D=22=
+white-space:pre=22>	</span>a. What skills did you have in programming bef=
+ore coming to animoto=3F</div><div>3. Steps and learnings</div><div><span=
+ class=3D=22Apple-tab-span=22 style=3D=22white-space:pre=22>	</span>a. Wh=
+at did you do to learn ruby (books you read, websites you used)</div><div=
+><span class=3D=22Apple-tab-span=22 style=3D=22white-space:pre=22>	</span=
+>b. same with SQL, javascript</div><div><span class=3D=22Apple-tab-span=22=
+ style=3D=22white-space:pre=22>	</span>c. review the differences from wha=
+t you're used to, and the challenges you came across</div><div>4. Project=
+s that you worked on</div><div><span class=3D=22Apple-tab-span=22 style=3D=
+=22white-space:pre=22>	</span>a. analytics dash: rewritten from a scripty=
+-style to an OOP style that is much more performant</div><div><span class=
+=3D=22Apple-tab-span=22 style=3D=22white-space:pre=22>	</span>b. SQL quer=
+ies that you had to work on for people and some of the insights they rais=
+ed</div><div><span class=3D=22Apple-tab-span=22 style=3D=22white-space:pr=
+e=22>	</span>c.&nbsp;Statty2&nbsp;bugs: fixing the widget view so the rol=
+lup field doesn't reset. making sure a =22commercial=22 rollup included c=
+ustom post rolls</div><div>5. ec2 project</div><div><span class=3D=22Appl=
+e-tab-span=22 style=3D=22white-space:pre=22>	</span>a. integration into s=
+tatty2: ec2 metrics of both sum(render=5Flength) and the compute per leng=
+th <b>(CHECK OUT THE NEWEST QUERY ON MASTER/STABLE AS IT HAS SLIGHTLY CHA=
+NGED, WE CAN GO OVER WHY IT IS THAT WAY AND YOU CAN TALK ABOUT WHY IT MAK=
+ES MORE SENSE)</b></div><div><span class=3D=22Apple-tab-span=22 style=3D=22=
+font-weight: bold; white-space: pre; =22>	</span>b. autolaunch mongo data=
+ (maybe good to go over how the query got rewritten a few times and the r=
+easons why it was updated, good example of code iteration and code review=
+)</div><div>6. insights/learnings/wrapup</div><div><span class=3D=22Apple=
+-tab-span=22 style=3D=22white-space:pre=22>	</span>a. relatively freeform=
+, show off the ec2 metrics included in statty2, etc, open up for question=
+s</div><div><br></div><div><br></div><div>let me know if you have any que=
+stions, and feel free to play around with the format as you wish--this is=
+ your presentation, not mine ;)</div><div><br></div><div>Ed</div>
+                <div></div>
+            
+--51f2d429_188bfb19_5e1b--
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color</key>
+	<string>000000</string>
+	<key>date-sent</key>
+	<real>1374868521</real>
+	<key>flags</key>
+	<integer>8623750273</integer>
+	<key>original-mailbox</key>
+	<string>imap://atul%40animoto.com@imap.gmail.com/INBOX</string>
+	<key>remote-id</key>
+	<string>764</string>
+	<key>subject</key>
+	<string>presentation text</string>
+</dict>
+</plist>
